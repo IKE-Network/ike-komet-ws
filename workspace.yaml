@@ -42,3 +42,11 @@ subprojects:
     version: "1.127.2-SNAPSHOT"
     groupId: dev.ikm.tinkar
     depends-on: []
+
+  tinkar-composer:
+    description: >
+      tinkar-composer subproject.
+    repo: https://github.com/ikmdev/tinkar-composer.git
+    version: "1.14.0-SNAPSHOT"
+    groupId: dev.ikm.tinkar
+    depends-on: []
