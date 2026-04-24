@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ike-komet-ws
+
+  Inherits from ike-parent to get plugin version management for
+  ike-maven-plugin and ike-workspace-maven-plugin automatically.
+
+  Every subproject is inside a file-activated profile so the reactor
+  automatically includes only the repos that are physically cloned.
+  Clone more repos and they join the reactor on the next build.
+
+  Usage:
+    mvn clean install                        # All cloned repos
+    mvn ws:init                              # Clone all repos
+    mvn ws:overview                          # Workspace overview
+-->
+<project xmlns="http://maven.apache.org/POM/4.1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.1.0
+                             https://maven.apache.org/xsd/maven-4.1.0.xsd"
+         root="true">
+    <modelVersion>4.1.0</modelVersion>
+
+    <parent>
+        <groupId>network.ike.platform</groupId>
+        <artifactId>ike-parent</artifactId>
+        <version>1</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>local.aggregate</groupId>
+    <artifactId>ike-komet-ws</artifactId>
+    <version>1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>ike-komet-ws</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>network.ike.tooling</groupId>
+                <artifactId>ike-maven-plugin</artifactId>
+                <!-- version from ike-parent pluginManagement -->
+            </plugin>
+            <plugin>
+                <groupId>network.ike.platform</groupId>
+                <artifactId>ike-workspace-maven-plugin</artifactId>
+                <!-- version from ike-parent pluginManagement -->
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Profiles are added by ws:add -->
+    <profiles>
+    </profiles>
+
+</project>

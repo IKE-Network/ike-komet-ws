@@ -1,0 +1,37 @@
+# ike-komet-ws .gitignore
+# ═══════════════════════
+#
+# Ignore everything, whitelist only workspace-owned files.
+# Subproject repos are independent git repos cloned by ws:init.
+
+# ── Ignore everything by default ─────────────────────────────────
+*
+
+# ── Whitelist workspace-level files ──────────────────────────────
+!.gitignore
+!pom.xml
+!workspace.yaml
+!README.adoc
+!GOALS.md
+!WS-REFERENCE.md
+!mvnw
+!mvnw.cmd
+
+# ── Whitelist workspace-owned directories ────────────────────────
+!.mvn/
+!.mvn/**
+!checkpoints/
+!checkpoints/**
+!.run/
+!.run/**
+
+# ── IntelliJ project config (curated slice) ──────────────────────
+# Small, stable project-wide settings shared across collaborators.
+# compiler.xml and vcs.xml are excluded — they regenerate per
+# Maven reload or per workspace membership.
+!.idea/
+!.idea/.gitignore
+!.idea/misc.xml
+!.idea/kotlinc.xml
+!.idea/encodings.xml
+!.idea/jarRepositories.xml
