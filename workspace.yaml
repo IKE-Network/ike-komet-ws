@@ -58,3 +58,15 @@ subprojects:
     version: "0.1.0-SNAPSHOT"
     groupId: dev.ikm.ike
     depends-on: []
+
+  komet:
+    description: >
+      komet subproject.
+    repo: https://github.com/ikmdev/komet.git
+    version: "1.59.0-SNAPSHOT"
+    groupId: dev.ikm.komet
+    depends-on:
+      - subproject: tinkar-core
+        relationship: build
+      - subproject: tinkar-composer
+        relationship: build
