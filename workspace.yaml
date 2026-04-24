@@ -34,3 +34,11 @@ subprojects:
     version: "3.0.7-SNAPSHOT"
     groupId: dev.ikm.komet
     depends-on: []
+
+  tinkar-core:
+    description: >
+      tinkar-core subproject.
+    repo: https://github.com/ikmdev/tinkar-core.git
+    version: "1.127.2-SNAPSHOT"
+    groupId: dev.ikm.tinkar
+    depends-on: []
