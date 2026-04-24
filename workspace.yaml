@@ -26,3 +26,11 @@ subprojects:
 # ide:
 #   language-level: JDK_25_PREVIEW
 #   jdk-name: "25"
+
+  komet-bom:
+    description: >
+      komet-bom subproject.
+    repo: https://github.com/ikmdev/komet-bom.git
+    version: "3.0.7-SNAPSHOT"
+    groupId: dev.ikm.komet
+    depends-on: []
