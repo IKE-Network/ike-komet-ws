@@ -50,3 +50,11 @@ subprojects:
     version: "1.14.0-SNAPSHOT"
     groupId: dev.ikm.tinkar
     depends-on: []
+
+  rocks-kb:
+    description: >
+      rocks-kb subproject.
+    repo: https://github.com/ikmdev/rocks-kb.git
+    version: "0.1.0-SNAPSHOT"
+    groupId: dev.ikm.ike
+    depends-on: []
