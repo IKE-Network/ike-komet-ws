@@ -70,3 +70,15 @@ subprojects:
         relationship: build
       - subproject: tinkar-composer
         relationship: build
+
+  komet-desktop:
+    description: >
+      komet-desktop subproject.
+    repo: https://github.com/ikmdev/komet-desktop.git
+    version: "3.0.0-SNAPSHOT"
+    groupId: dev.ikm.komet
+    depends-on:
+      - subproject: tinkar-core
+        relationship: build
+      - subproject: tinkar-composer
+        relationship: build
