@@ -16,6 +16,11 @@
 !WS-REFERENCE.md
 !mvnw
 !mvnw.cmd
+!versions-upgrade-rules.yaml
+
+# ── Whitelist scaffold lockfile ──────────────────────────────────
+!.ike/
+!.ike/scaffold.lock
 
 # ── Whitelist workspace-owned directories ────────────────────────
 !.mvn/
@@ -39,3 +44,20 @@
 # ws:* goal reports
 ws꞉*.md
 !.gitattributes
+# BEGIN ike-managed
+# Maven build output
+target/
+
+# Intellij
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# IKE local state (never committed)
+.ike/vcs-state
+# END ike-managed
+
+# ike:* goal reports
+ike꞉*.md
