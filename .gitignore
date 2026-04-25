@@ -45,18 +45,10 @@
 ws꞉*.md
 !.gitattributes
 # BEGIN ike-managed
-# Maven build output
-target/
-
-# Intellij
-.idea/
-*.iml
-
-# macOS
-.DS_Store
-
-# IKE local state (never committed)
-.ike/vcs-state
+# Scaffold-tracked files (whitelisted out of the catch-all ignore)
+!versions-upgrade-rules.yaml
+!.ike/
+!.ike/scaffold.lock
 # END ike-managed
 
 # ike:* goal reports
