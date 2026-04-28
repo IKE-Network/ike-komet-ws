@@ -43,7 +43,9 @@ subprojects:
     branch: feature/reasoner
     version: "1.127.2-SNAPSHOT"
     groupId: dev.ikm.tinkar
-    depends-on: []
+    depends-on:
+      - subproject: komet-bom
+        relationship: build
 
   tinkar-composer:
     description: >
@@ -52,7 +54,9 @@ subprojects:
     branch: feature/reasoner
     version: "1.14.0-SNAPSHOT"
     groupId: dev.ikm.tinkar
-    depends-on: []
+    depends-on:
+      - subproject: komet-bom
+        relationship: build
 
   rocks-kb:
     description: >
@@ -61,7 +65,9 @@ subprojects:
     branch: feature/reasoner
     version: "0.1.0-SNAPSHOT"
     groupId: dev.ikm.ike
-    depends-on: []
+    depends-on:
+      - subproject: komet-bom
+        relationship: build
 
   komet:
     description: >
@@ -71,6 +77,8 @@ subprojects:
     version: "1.59.0-SNAPSHOT"
     groupId: dev.ikm.komet
     depends-on:
+      - subproject: komet-bom
+        relationship: build
       - subproject: tinkar-core
         relationship: build
       - subproject: tinkar-composer
@@ -84,6 +92,8 @@ subprojects:
     version: "3.0.0-SNAPSHOT"
     groupId: dev.ikm.komet
     depends-on:
+      - subproject: komet-bom
+        relationship: build
       - subproject: tinkar-core
         relationship: build
       - subproject: tinkar-composer
