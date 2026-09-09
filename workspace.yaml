@@ -102,7 +102,7 @@ subprojects:
     description: >
       tinkar-schema subproject.
     repo: https://github.com/ikmdev/tinkar-schema.git
-    branch: main
+    branch: feature/grpc_search_labels
     sha: "e88641db86a9b5ba43ebc946c79b3d4f5f1c266f"
     version: 1.43.5-SNAPSHOT
     groupId: dev.ikm.tinkar
